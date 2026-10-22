@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b10">
+  <meta name="description" content="Discover Android apps and developer projects by Faroque Tech. Explore releases, features, source code, and project documentation.">
+  <title>Faroque Tech — Android Projects</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Faroque Tech home">
+      <span class="brand-mark">FT</span><span>Faroque<span class="brand-muted"> Tech</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+    <nav id="primaryNav" class="nav">
+      <a href="#apps">Apps</a><a href="#about">About</a><a href="#community">Community</a>
+      <a class="nav-cta" href="https://github.com/FaroqueTech0" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> INDEPENDENT ANDROID DEVELOPMENT</p>
+        <h1>Tools built for<br><span class="gradient-text">curious minds.</span></h1>
+        <p class="hero-lede">Explore Android apps, customization projects, and experiments from Faroque Tech — built to make your device more useful and more yours.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#apps">Explore projects <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/FaroqueTech0" target="_blank" rel="noopener noreferrer">Browse source code ↗</a>
+        </div>
+        <div class="hero-meta"><span>Android focused</span><i></i><span>Open-source projects</span><i></i><span>Made independently</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract neon island illustration" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-glow"></div>
+        <div class="island-pill"><span class="pill-icon">◉</span><span class="pill-lines"><b></b><b></b></span><span class="pill-dot"></span></div>
+        <div class="art-card card-top"><span class="mini-icon mint">◈</span><span><b>Now playing</b><small>Project showcase</small></span><span class="equalizer">▂▅▃▇</span></div>
+        <div class="art-card card-bottom"><span class="mini-icon violet">⌘</span><span><b>Built for Android</b><small>Explore. Customize. Build.</small></span></div>
+        <div class="art-caption">FAROQUE TECH / PROJECTS</div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Project values">
+      <div><span class="strip-symbol">⌁</span><span><b>Practical tools</b><small>Designed around real use</small></span></div>
+      <div><span class="strip-symbol">⌘</span><span><b>Open development</b><small>Source and releases when available</small></span></div>
+      <div><span class="strip-symbol">✳</span><span><b>Built iteratively</b><small>Improved with feedback</small></span></div>
+    </section>
+
+    <section class="section apps-section" id="apps">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Explore the projects<span class="heading-period">.</span></h2><p class="section-lede">Browse the apps, inspect the source, and find the right release for your device.</p></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="projectSearch" type="search" placeholder="Search projects..." aria-label="Search projects"></label>
+      </div>
+      <div class="filter-row" id="filters" aria-label="Filter projects">
+        <button class="filter active" data-filter="all">All projects</button>
+        <button class="filter" data-filter="customization">Customization</button>
+        <button class="filter" data-filter="system">System tools</button>
+        <button class="filter" data-filter="development">Developer tools</button>
+        <button class="filter" data-filter="experimental">Experimental</button>
+      </div>
+      <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>No projects match your search. Try another name or category.</p>
+      <div class="section-footnote"><span class="footnote-dot"></span> Project availability and compatibility can vary by device, Android version, and ROM. Read each project’s release notes before installing.</div>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="about-panel">
+        <div class="about-graphic"><div class="about-orbit"></div><div class="about-monogram">FT<span>.</span></div><div class="about-caption">INDEPENDENT / ANDROID / OPEN SOURCE</div></div>
+        <div class="about-copy"><p class="eyebrow">ABOUT FAROQUE TECH</p><h2>Small projects.<br><span class="gradient-text">Useful ideas.</span></h2><p>Faroque Tech is an independent developer brand focused on Android tools, customization, and experiments. Each project has its own goals, requirements, and release history.</p><p>This page is a central directory. Follow each project’s official repository for the most accurate information, source code, and downloads.</p><a class="text-link" href="https://github.com/FaroqueTech0" target="_blank" rel="noopener noreferrer">Visit the GitHub profile <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="community-section section" id="community">
+      <div class="community-card"><div><p class="eyebrow">FOLLOW THE WORK</p><h2>Build, test, <span class="gradient-text">share feedback.</span></h2><p>Find releases and source code on GitHub. Add your community link in <code>assets/projects.js</code> or update the community button below.</p></div><div class="community-actions"><a class="button button-primary" href="https://github.com/FaroqueTech0" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a><a class="button button-secondary" id="telegramLink" href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram <span class="placeholder-note">(update link)</span> ↗</a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="./"><span class="brand-mark">FT</span><span>Faroque<span class="brand-muted"> Tech</span></span></a><p>Independent Android projects, built with curiosity.</p><div class="footer-links"><a href="https://github.com/FaroqueTech0" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#apps">Projects</a><a href="#main">Back to top ↑</a></div><small>© <span id="year"></span> Faroque Tech. Project names and marks belong to their respective owners.</small></footer>
+
+  <script src="assets/projects.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
